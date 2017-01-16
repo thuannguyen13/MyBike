@@ -67,15 +67,13 @@ public class CountdownService extends Service {
         notBuilder.setContentTitle(sTitle);
         notBuilder.setContentText("Hãy đến nơi bảo dưỡng gần nhất trên bản đồ!!!");
 
-        Intent intent = new Intent(getBaseContext(), com.example.admin.mybike.Notification.class);
+        Intent intent = new Intent(getBaseContext(), MapsActivity.class);
 
 
         // PendingIntent.getActivity(..) sẽ start mới một Activity và trả về
         // đối tượng PendingIntent.
         // Nó cũng tương đương với gọi Context.startActivity(Intent).
-        PendingIntent pendingIntent = PendingIntent.getActivity(getBaseContext(), MY_REQUEST_CODE,
-                intent, PendingIntent.FLAG_UPDATE_CURRENT);
-
+        PendingIntent pendingIntent = PendingIntent.getActivity(getBaseContext(), MY_REQUEST_CODE, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
         notBuilder.setContentIntent(pendingIntent);
 
