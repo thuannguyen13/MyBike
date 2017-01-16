@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.MarkerPopup"
+    android:padding="10dp"
+    android:background="@color/colorPrimary"
+    android:elevation="0dp"
+    style="@style/AppTheme.NoActionBar">
+
+    <TextView
+        android:text="Add New Marker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_margin="10dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/MarkerNameTxt"
+            android:hint="Marker Name"
+            android:textColorLink="@android:color/white"
+            android:textColorHint="#f3f3f3"
+            android:inputType="text"
+            android:elevation="5dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/MarkerDesTxt"
+            android:hint="Description"
+            android:textColorHint="#f3f3f3"
+            android:textColorLink="@android:color/white"
+            android:inputType="text"
+            android:elevation="5dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:text="Save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SaveMarkerBtn" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:text="Delete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/DeleteMarkerBtn"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:text="Clear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ClearMarkerBtn"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:text="Reload"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/LoadMarkerBtn"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

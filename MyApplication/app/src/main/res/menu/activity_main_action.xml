@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MapsActivity" >
+    <!-- Search / will display always -->
+    <item android:id="@+id/nearby_location"
+        android:icon="@drawable/ic_motorcycle_white_48dp"
+        android:title="Nearby Workshop"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/marker_manager"
+        android:icon="@drawable/ic_place_white_48dp"
+        android:title="Markers Manager"
+        app:showAsAction="ifRoom"/>
+
+</menu>

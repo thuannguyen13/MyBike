@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#cddc39</color>
+    <color name="colorPrimaryDark">#afb42b</color>
+    <color name="colorAccent">#3D5AFE</color>
+    <color name="colorActionBar">#303030</color>
+    <color name="colorHomeMenu">#424242</color>
+</resources>

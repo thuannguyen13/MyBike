@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_homescreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.mybike.Homescreen"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:background="#303030"
+    android:weightSum="1">
+
+    <TextView
+        android:text="MyBike"
+        android:layout_width="match_parent"
+        android:id="@+id/textView"
+        android:layout_height="60dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="30sp"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <Button
+            android:text="Facebook Login"
+            android:layout_width="match_parent"
+            android:id="@+id/FacebookLoginBtn"
+            style="@style/Widget.AppCompat.Button"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:background="@drawable/mainscreen_button_state"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_height="match_parent"
+            android:elevation="5dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Vehicle Management"
+            android:layout_width="match_parent"
+            android:id="@+id/BikeManagementBtn"
+            android:background="@drawable/mainscreen_button_state"
+            android:layout_above="@+id/FacebookLoginBtn"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/FacebookLoginBtn"
+            android:layout_height="match_parent"
+            android:elevation="5dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <Button
+            android:text="Notification"
+            android:layout_width="match_parent"
+            android:id="@+id/NotificationBtn"
+            android:background="@drawable/mainscreen_button_state"
+            android:layout_above="@+id/BikeManagementBtn"
+            android:layout_alignStart="@+id/BikeManagementBtn"
+            android:layout_height="match_parent"
+            android:elevation="5dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="MyBike Map"
+            android:layout_width="match_parent"
+            android:id="@+id/MyBikeMapBtn"
+            android:background="@drawable/mainscreen_button_state"
+            android:layout_above="@+id/NotificationBtn"
+            android:layout_alignStart="@+id/NotificationBtn"
+            android:layout_height="match_parent"
+            android:elevation="5dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_directions_white_48dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

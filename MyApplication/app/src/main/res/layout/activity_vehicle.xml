@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vehicle"
+    android:orientation="vertical">
+
+    <TabHost
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tabHost"
+        android:layout_gravity="left|center_vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@android:style/Widget.DeviceDefault.Light.TabWidget"
+                android:orientation="horizontal">
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:id="@+id/tabCreator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/ImageView_GalleryPhotoPicker"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/no_user_logo" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:ems="10"
+                        android:id="@+id/txtName"
+                        android:layout_marginTop="20dp"
+                        android:hint="Name"
+                        android:padding="20dp" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/txtDistance"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:hint="Distance(Km)"
+                        android:padding="20dp" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/txtDate"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:hint="Last Oil Change Date"
+                        android:inputType="date"
+                        android:padding="20dp" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/txtAddress"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:hint="Last Chain Change Date"
+                        android:padding="20dp"
+                        android:inputType="datetime" />
+
+                    <Button
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Add"
+                        android:id="@+id/btnAdd"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:enabled="false"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabContactList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/listView"
+                        android:layout_gravity="center"
+                        android:divider="#424242" />
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

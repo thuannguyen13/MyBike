@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MyBike</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="facebook_app_id">1251009014938452</string>
+    <string-array name="maps_type">
+        <item>Normal</item>
+        <item>Satellite</item>
+        <item>Hybrid</item>
+        <item>Terrain</item>
+    </string-array>
+
+    <string-array name="place_type">
+        <item>store</item>
+        <item>atm</item>
+
+    </string-array>
+
+    <string-array name="place_type_name">
+        <item>motorcycle</item>
+        <item>bank</item>
+
+    </string-array>
+</resources>
